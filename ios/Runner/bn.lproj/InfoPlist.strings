@@ -1,0 +1,3 @@
+// WearLoop system permission explanations.
+"NSCameraUsageDescription" = "জামাকাপড়ের ছবি তুলে আপনার WearLoop আলমারিতে যোগ করুন।";
+"NSPhotoLibraryUsageDescription" = "আপনার WearLoop আলমারিতে যোগ করতে পোশাকের ছবি বেছে নিন।";

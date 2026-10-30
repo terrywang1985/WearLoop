@@ -1,0 +1,14 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "prompts": [
+    {
+      "asset": "knit.png",
+      "prompt": "Use case: product-mockup. Asset type: transparent product photo cutout for the WearLoop mobile digital wardrobe app. Generate ONE photorealistic oatmeal-beige crewneck knit sweater, full garment front view, sleeves gently extended down diagonally, naturally laid flat, with realistic cable-free fine knitted wool texture, ribbed neck/cuffs/hem, slight natural fabric folds. Consistent premium catalog studio photography, soft neutral daylight from upper left, true material texture, no dramatic shadows. Entire item centered with comfortable transparent margin on all sides, occupies about 80% of square image. Background MUST be genuinely transparent alpha, no surface, no floor, no mannequin, no model, no hanger, no props, no text, no labels, no watermark, no logos. A real garment photograph, not illustration or 3D render."
+    },
+    {
+      "asset": "tote.png",
+      "prompt": "Use case: product-mockup. Asset type: transparent product photo cutout for the WearLoop mobile digital wardrobe app. Generate ONE natural oatmeal cotton canvas tote bag with two sturdy fabric handles, unbranded, full front view laid flat with handles up, realistic thick woven cotton canvas texture, slightly softened fabric creases, simple neat seams. Consistent premium catalog studio photography, soft neutral daylight from upper left, true material texture, no cast shadow. Entire item centered with about 10% transparent margin on all sides, fits square canvas. Background MUST be genuinely transparent alpha, no surface, no floor, no model, no hands, no props, no text, no logos, no watermark. A real product photograph, not illustration or 3D render."
+    }
+  ]
+}

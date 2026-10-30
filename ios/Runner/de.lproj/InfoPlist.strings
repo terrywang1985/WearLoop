@@ -1,0 +1,3 @@
+// WearLoop system permission explanations.
+"NSCameraUsageDescription" = "Fotografiere deine Kleidung, um sie zu deinem WearLoop-Kleiderschrank hinzuzufügen.";
+"NSPhotoLibraryUsageDescription" = "Wähle Kleidungsfotos aus, um sie zu deinem WearLoop-Kleiderschrank hinzuzufügen.";

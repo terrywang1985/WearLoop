@@ -1,0 +1,62 @@
+{
+  "title": "Política de privacidade",
+  "back": "Voltar",
+  "updated": "Atualização: 2026-10-29",
+  "summary": "WearLoop é um diário de guarda-roupa e looks. Esta política explica como a versão atual do app trata informações.",
+  "contactLabel": "Contato de privacidade",
+  "contactPending": "O contato não foi configurado para esta versão.",
+  "onlineLabel": "Política de privacidade online",
+  "loading": "Carregando a política…",
+  "error": "Não foi possível carregar a política.",
+  "retry": "Tentar novamente",
+  "appName": "WearLoop",
+  "languageCode": "pt",
+  "updatedDate": "2026-10-29",
+  "sections": [
+    {
+      "id": "local_data",
+      "title": "Dados no seu dispositivo",
+      "body": "Nomes de roupas, categorias, cores, estações, marcas, preços, anotações, looks e registros de uso ficam no dispositivo. O app Android usa um banco SQLite local e arquivos de imagem próprios do app. Idioma e preferências também são locais. A prévia web usa o armazenamento do navegador. As funções principais funcionam offline."
+    },
+    {
+      "id": "photos",
+      "title": "Fotos e câmera",
+      "body": "Ao escolher adicionar uma foto, o WearLoop usa a câmera ou o seletor de fotos do sistema. Lê a foto escolhida para exibir, redimensionar ou recortar e salva uma cópia com a peça. O sistema operacional controla o acesso. O app não examina toda a galeria em segundo plano."
+    },
+    {
+      "id": "recognition",
+      "title": "Reconhecimento no dispositivo",
+      "body": "Nas versões com reconhecimento local, um modelo de IA incluído detecta roupas e recorta imagens no dispositivo. Fotos e resultados não são enviados a um servidor do desenvolvedor para esse processo. Revise os resultados antes de salvar: podem conter erros. A função não identifica pessoas."
+    },
+    {
+      "id": "sharing",
+      "title": "Compartilhamento por sua escolha",
+      "body": "Ao compartilhar um look, o app prepara a imagem ou o texto escolhido e abre o menu de compartilhamento. O aplicativo ou destinatário selecionado recebe o conteúdo e o trata de acordo com suas práticas. Apagar o registro local não remove cópias compartilhadas fora do WearLoop."
+    },
+    {
+      "id": "developer",
+      "title": "Coleta e serviços do desenvolvedor",
+      "body": "WearLoop não tem contas, SDK de anúncios ou SDK de análise. O app não envia dados do guarda-roupa, fotos, registros ou identificadores do dispositivo a servidores do desenvolvedor. Ele não recebe esse conteúdo local durante o uso normal. Isso não inclui informações que você compartilha ou envia por e-mail por vontade própria."
+    },
+    {
+      "id": "backup",
+      "title": "Backup e transferência do sistema",
+      "body": "O sistema operacional ou fabricante pode fazer backup ou transferir dados conforme suas configurações e a configuração de backup do app. Esses serviços são separados de uma conta WearLoop ou nuvem do desenvolvedor. Gerencie backups, transferências e cópias restauradas nas configurações do sistema ou provedor responsável."
+    },
+    {
+      "id": "deletion",
+      "title": "Retenção e exclusão",
+      "body": "Registros locais permanecem até você apagá-los, limpar os dados ou desinstalar o app. Configurações > Apagar todos os dados remove peças, looks, registros e cópias de imagens salvas pelo app. A limpeza de dados ou desinstalação remove o armazenamento próprio conforme o funcionamento do sistema. Fotos originais, arquivos exportados ou compartilhados, backups e cópias em outros dispositivos precisam ser gerenciados separadamente. Um backup pode restaurar dados ao reinstalar."
+    },
+    {
+      "id": "contact",
+      "title": "Contato com o desenvolvedor",
+      "body": "Use o contato abaixo para dúvidas. Se você enviar um e-mail, seu endereço, mensagem e anexos serão enviados ao destinatário e tratados pelos serviços de e-mail envolvidos. Usamos a correspondência para atender à consulta; evite fotos ou informações pessoais desnecessárias. O desenvolvedor não pode ler ou apagar dados que existem apenas no seu dispositivo. Peça a exclusão de e-mails de suporte pelo mesmo contato."
+    },
+    {
+      "id": "online_policy",
+      "title": "Leitura online",
+      "body": "O texto no app está disponível offline. Ao abrir a política online, seu navegador se conecta à hospedagem, que pode receber dados usuais de solicitação, como o IP, conforme suas configurações. As páginas fornecidas não contêm anúncios, scripts de análise ou cookies de rastreamento. Mudanças no tratamento das informações serão refletidas em uma política atualizada."
+    }
+  ]
+}

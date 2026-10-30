@@ -1,0 +1,422 @@
+0	 / 7 hari tercatat
+1	Tingkat pemakaian 30 hari
+2	KESEMPATAN KEDUA
+3	LEBIH SEDIKIT BELANJA. LEBIH JADI DIRI SENDIRI.
+4	KOLEKSI PADANAN
+5	LEMARI PAKAIAN
+6	PILIHAN PRIBADI HARI INI
+7	WAWASAN LEMARI
+8	PAKAI LEBIH SERING. KURANGI PEMBOROSAN.
+9	Pakai lebih sering. Kurangi pemborosan.
+10	Pakai lebih sering. Kurangi pemborosan.\nData hanya disimpan di perangkat ini.
+11	Pakai lebih sering.\nKurangi pemborosan.
+12	DATA ANDA
+13	LEMARI HARIAN ANDA
+14	PREFERENSI ANDA
+15	KEBIASAAN ANDA
+16	LEMARI ANDA, GAYA ANDA
+17	{category} {count}
+18	{category} · Dipakai {count} kali
+19	{count} item
+20	{count} item
+21	{count} item. Beri setiap favorit kesempatan untuk tampil.
+22	{count} item sudah tersimpan selama {days} hari. Beri kesempatan untuk dipakai lagi.
+23	{count} hari lalu
+24	{count} hari tercatat
+25	{count} padanan
+26	{count} padanan. Simpan kombinasi favorit untuk setiap hari.
+27	{count} kali
+28	{date} · {count} item
+29	Sudah ada catatan padanan pada {date}. Menyimpan akan mengganti catatan hari itu.
+30	{days} hari
+31	Tidak dipakai selama {days}+ hari
+32	{name} · {confidence}%
+33	{name}, {category}
+34	Terakhir dipakai
+35	Terakhir dipakai {date}
+36	Atasan
+37	Bawahan
+38	Berbagai item, gaya harian Anda
+39	Tambahkan harga dan catat pemakaian untuk melihat biaya per pakai.
+40	Buat kartu cantik untuk padanan sehari-hari.
+41	Buat padanan untuk kesempatan ini
+42	Warna utama
+43	Hari ini
+44	Hari ini
+45	Pakai ini hari ini
+46	Dipakai hari ini
+47	Hari ini,\ngaya Anda adalah milik Anda.
+48	{count} item dipakai hari ini.\nSehari lagi bersama favorit Anda.
+49	Sudah dipakai hari ini
+50	Mau pakai apa hari ini?
+51	Pakai ini hari ini
+52	Berpakaian untuk diri sendiri hari ini.
+53	Hari ini
+54	Sudah dipakai hari ini
+55	Padanan hari ini · Tercatat
+56	Pilihan hari ini / {name}
+57	Padanan tersimpan
+58	Temukan lemari yang cocok untuk Anda, satu pemakaian demi satu.
+59	Tambahkan item pertama dan bangun lemari Anda sendiri.
+60	Pilih foto
+61	Mulai dari sesuatu yang Anda suka
+62	Temukan kesegaran dari lemari Anda sendiri.
+63	item
+64	item
+65	Harga (opsional)
+66	Lemari harian Anda
+67	Lemari Anda dimulai dari satu item
+68	Misalnya: Ke kantor hari Senin
+69	Misalnya: Kaus putih dasar
+70	Simpan
+71	Menyimpan…
+72	Simpan ke lemari
+73	Simpan padanan · {count} item
+74	Simpan catatan
+75	Edit padanan hari ini
+76	Preferensi
+77	Tambahkan item favorit untuk melengkapi padanan ini.
+78	Pilih beberapa item dahulu
+79	Mulai dari pakaian yang Anda suka
+80	Tambahkan item pertama, lalu temukan kombinasi yang Anda suka.
+81	Tudung
+82	Semua
+83	Semua item
+84	Semua padanan
+85	Tentang WearLoop
+86	Tentang item ini
+87	Tutup
+88	Musim dingin
+89	Musim dingin
+90	BAGIKAN GAYA ANDA
+91	Kartu berbagi belum siap
+92	Bagikan gambar
+93	Bagikan padanan
+94	Gambar lengkap dibuat saat dibagikan
+95	Kategori
+96	Beralih ke Item satuan untuk mencatat pakaian tanpa padanan tersimpan.
+97	Buat padanan pertama
+98	Hapus
+99	Menghapus catatan ini juga akan memperbarui jumlah pemakaian item di dalamnya.
+100	Hapus padanan
+101	Hapus item
+102	Hapus item, padanan, dan riwayat pemakaian untuk mulai dari awal
+103	Hapus catatan
+104	Hapus item ini?
+105	Hapus padanan ini?
+106	Hapus catatan harian ini?
+107	Tambahkan ke lemari ({count})
+108	Tas
+109	Item dan riwayat pemakaian tetap disimpan. Padanan tersimpan ini akan dihapus.
+110	Urutkan item
+111	Detail item
+112	Biaya per pakai
+113	Biaya per pakai = harga beli ÷ jumlah pemakaian
+114	Biaya per pakai terendah · 3 teratas
+115	Biaya per pakai tertinggi
+116	Celana chino khaki
+117	Trench coat khaki
+118	Favorit yang selalu dipakai
+119	Batal
+120	Hapus dari favorit
+121	Batalkan pilihan item ini
+122	Saku
+123	Nama
+124	Sen
+125	Rab
+126	Sel
+127	Jum
+128	Sab
+129	Kam
+130	Min
+131	Akhir pekan
+132	Akhir pekan santai
+133	Merek
+134	Merek (opsional)
+135	Padanan favorit layak dipakai lagi.
+136	Kombinasi favorit layak diulang.
+137	Favorit Anda akan meninggalkan jejak
+138	Syal
+139	Ikon aplikasi
+140	Gambar belum berhasil dibagikan. Coba lagi atau salin teks padanan.
+141	Kesempatan: {tags}
+142	Catatan (ukuran, perawatan, dll.)
+143	Salin teks
+144	Musim panas
+145	Musim panas
+146	Bunga musim panas
+147	Luaran
+148	Lebih banyak
+149	Kapan item dianggap terlupakan?
+150	Mantel
+151	Penutup kepala
+152	Jaket
+153	Berpakaian dengan baik.\nJalani hidup dengan baik.
+154	Padanan yang bagus layak dipakai lagi
+155	Pakaian yang bagus layak tampil lagi.
+156	Pakaian yang bagus layak dipakai lagi
+157	Pakaian yang bagus layak dipakai lagi.
+158	Pakaian bagus patut sering dipakai
+159	Pengenalan sepenuhnya berjalan di perangkat; foto tidak pernah diunggah. Kenali atasan, celana, rok, sepatu, tas, dan lainnya dari foto seluruh tubuh, atau kenali satu item.
+160	Lebih sedikit
+161	Kurangi yang terlupakan. Lebih sayangi lemari Anda.
+162	Di rumah
+163	Pilihan sehari-hari Anda
+164	Sudah ditambahkan ke padanan hari ini
+165	Ditambahkan ke padanan hari ini: {name}
+166	Item yang harganya sudah diisi
+167	{count} item ditambahkan dengan AI di perangkat
+168	Sudah {count} hari. Beri item ini kesempatan untuk tampil lagi.
+169	Tidak dipakai selama {days} hari. Beri kesempatan untuk tampil lagi.
+170	Dipakai bersama {count} kali
+171	Rutin mencatat selama {count} hari.\nKebiasaan kecil membuat favorit terus dipakai.
+172	Dipakai bersama {count} kali
+173	Tercatat
+174	{count} hari tercatat · Setiap pemakaian ulang menambah nilai lemari Anda.
+175	Tercatat untuk hari ini: “{name}”
+176	{count} dipilih
+177	{count} item dipilih
+178	Tas tote kanvas
+179	Topi
+180	Belahan
+181	Kardigan
+182	Kategori
+183	Semua data saat ini akan diganti dengan lemari contoh.
+184	Temukan kembali
+185	Untuk ditemukan kembali
+186	Pulihkan lemari contoh
+187	Pulihkan lemari contoh?
+188	Catatan saya
+189	Padanan saya
+190	Favorit saya
+191	Sehari-hari
+192	JURNAL PADANAN SAYA
+193	BUKU GAYA SAYA
+194	Padanan saya: {name}
+195	Lemari saya
+196	Tambah manual (tanpa AI)
+197	Sarung tangan
+198	Jam tangan
+199	Pengait
+200	Simpan {category} favorit Anda untuk sedikit inspirasi setiap hari.
+201	Simpan favorit Anda di sini
+202	Bagikan yang Anda suka
+203	Jadikan setiap hari milik Anda.
+204	Ubah inspirasi menjadi gaya sehari-hari.
+205	Padukan item dalam lemari dan simpan inspirasi harian Anda.
+206	Jubah
+207	Ritsleting
+208	Foto seluruh tubuh
+209	Ambil foto, tambahkan beberapa detail, dan mulai kisahnya di lemari Anda.
+210	Kamera
+211	Pilih item
+212	Coba kata kunci atau kategori lain.
+213	Cari padanan, kesempatan, atau item
+214	Hasil pencarian
+215	Cari nama, merek, atau catatan
+216	Padanan
+217	Padanan {count}
+218	Nama padanan
+219	Urutkan padanan
+220	Inspirasi padanan · {count} gaya
+221	Catatan padanan (opsional)
+222	Detail padanan
+223	Urungkan
+224	Favorit
+225	Jadikan padanan favorit
+226	Atur lemari, simpan padanan, dan jadikan berpakaian setiap hari kebiasaan yang Anda suka.
+227	Padanan baru
+228	Gaya baru, siap untuk penampilan pertamanya
+229	Perjalanan
+230	Gagal membuat gambar berbagi
+231	Gagal mendapatkan foto. Silakan coba lagi.
+232	Tidak perlu akun. Lemari Anda tersimpan di perangkat ini.
+233	Inspirasi sehari-hari
+234	Lemari sehari-hari
+235	Musim semi
+236	Musim semi
+237	Belum bisa menyalin. Silakan coba lagi.
+238	Musim dingin hangat
+239	Perbarui padanan hari ini?
+240	Ganti catatan
+241	5 paling sering dipakai · Setiap penampilan berarti
+242	35 hari terakhir · Biasakan mencatat
+243	Terbaru dibuat
+244	Terbaru ditambahkan
+245	Belum diisi
+246	Belum dicatat
+247	Catatan padanan pekan ini
+248	Impor AI di perangkat
+249	AI di perangkat belum tersedia. Anda tetap bisa menambahkan item ini secara manual.
+250	AI di perangkat · {confidence}%
+251	Mengenali di perangkat Anda…
+252	AI di perangkat: {name} · {confidence}%
+253	Pengenalan di perangkat gagal. Coba lagi atau tambahkan item secara manual.
+254	Lihat semua item
+255	Lihat semua padanan
+256	kali
+257	Mengenali dan memisahkan item di perangkat Anda…
+258	Formal
+259	Siap rapat
+260	Setiap item mendapat gilirannya. Pertahankan!
+261	Setiap catatan membantu Anda\nlebih mengenal lemari sendiri.
+262	Padanan harian · Ritual kecil
+263	per pakai
+264	Sweter
+265	Tidak ada item yang cocok
+266	Tidak ada yang terlupakan. Favorit Anda terus dipakai.
+267	Tidak ada pakaian yang terdeteksi dengan jelas. Coba foto yang lebih terang dengan seluruh tubuh terlihat.
+268	Kategori pakaian tidak terdeteksi dengan jelas. Pilih secara manual.
+269	Garis ala Prancis
+270	Rumbai
+271	Kemeja Oxford biru muda
+272	Atasan garis Breton
+273	Tambah {category}
+274	Tambahkan item untuk mengenal komposisi lemari Anda di sini.
+275	Tambah item pertama
+276	Tambah item
+277	Tambahkan item untuk mulai membuat dan mencatat padanan.
+278	Segar ke kantor
+279	Hapus semua data
+280	Hapus semua data?
+281	Hapus pencarian
+282	Hapus filter
+283	Blazer abu-abu
+284	Inspirasi / {name}
+285	Sweter rajut warna oat
+286	Manik-manik
+287	Membuat
+288	Buat kartu berbagi padanan
+289	Catat padanan dengan WearLoop · Pakai lebih sering. Kurangi pemborosan.
+290	Jelajahi semua fitur dengan lemari contoh
+291	Buat padanan dengan item ini
+292	Buat pakaian lama terasa segar lagi.
+293	Kaus putih dasar
+294	Sneaker putih
+295	Celana jin lurus
+296	Item ini juga akan dihapus dari catatan pemakaian dan padanan terkait.
+297	Foto
+298	Jelajahi lemari
+299	Kacamata
+300	Celana pendek
+301	Konfirmasi
+302	Gaun bunga
+303	Gambar contoh · Buatan AI
+304	Lemari contoh dipulihkan
+305	Musim gugur
+306	Musim gugur
+307	Hapus foto
+308	Pakai lebih sering. Kurangi pemborosan.
+309	Paling sering dipakai
+310	Paling jarang dipakai
+311	Teks padanan disalin. Bagikan inspirasi Anda!
+312	Preferensi berpakaian
+313	Riwayat pemakaian
+314	Kalender pemakaian
+315	Jurnal pemakaian
+316	Jumlah pemakaian
+317	Dipakai {count} kali
+318	Mulai jurnal pemakaian Anda hari ini
+319	Siap untuk penampilan pertama
+320	Kencan
+321	Item dalam padanan ini
+322	Paling sering dipakai
+323	Beri tempat untuk item yang Anda suka.
+324	Wawasan
+325	Edit padanan
+326	Edit catatan
+327	Edit item
+328	Lihat kalender padanan Anda
+329	Kerah jas
+330	Hiasan bahu
+331	Ikat pinggang
+332	Penghangat kaki
+333	Item satuan
+334	Item satuan
+335	Hiasan bunga
+336	Rimpel
+337	Pita
+338	pakaian
+339	Item, padanan, dan riwayat pemakaian akan dihapus secara permanen.
+340	Lemari
+341	Item lemari
+342	Nilai lemari
+343	Data lemari
+344	Data lemari dihapus
+345	Komposisi lemari
+346	Wawasan lemari
+347	Inspirasi dari lemari Anda
+348	Catat padanan sebelumnya
+349	Kemeja
+350	Lengan
+351	Kaus kaki
+352	Favorit yang terlupakan
+353	Panel hias
+354	Rok
+355	Celana panjang
+356	Lipit
+357	Beri pakaian bagus kesempatan untuk tampil lagi.
+358	Beri kesempatan tampil lagi
+359	Jadikan setiap item lebih mencerminkan diri Anda.
+360	Tambahkan tips gaya, kesempatan, atau sedikit inspirasi
+361	Catat padanan untuk menemukan item yang paling sering Anda pakai di sini.
+362	Catat pilihan hari ini.\nSimpan kisah item favorit Anda.
+363	Catat padanan hari ini
+364	Beri tempat untuk favorit Anda dan pakai lagi.
+365	Catat padanan
+366	Catat item yang Anda pakai dan kenali gaya sehari-hari Anda.
+367	Pengaturan
+368	{count} item terdeteksi
+369	Batalkan pilihan atau sesuaikan kategori, lalu tambahkan semuanya sekaligus ke lemari.
+370	Coba kata kunci padanan, kesempatan, atau item lain.
+371	Coba kesempatan lain atau buat kombinasi baru.
+372	Bahasa
+373	Bahasa & tampilan
+374	Masukkan harga yang valid, nol atau lebih
+375	Dibeli {date}
+376	Tanggal pembelian
+377	Tanggal pembelian (opsional)
+378	Harga beli
+379	Aplikasi kain
+380	Item yang tidak dipakai selama {days} hari akan muncul di Hari ini agar bisa Anda temukan kembali.
+381	Semakin dipakai, semakin bernilai
+382	Ikuti sistem
+383	Ketuk hati pada padanan untuk menyimpan inspirasi.
+384	Olahraga
+385	Proporsi item yang dipakai dalam 30 hari terakhir
+386	Kembali
+387	Kembali ke padanan dan pilih inspirasi harian lainnya.
+388	Belum pernah dipakai
+389	Belum dipakai. Coba hari ini.
+390	Tidak ada padanan yang cocok
+391	Belum ada padanan tersimpan
+392	Belum ada padanan yang memakai item ini. Jadikan awal kombinasi baru.
+393	Kategori ini masih kosong
+394	Belum ada padanan untuk kesempatan ini
+395	Item ini sudah tidak ada di lemari
+396	Padanan ini
+397	Padanan ini sudah tidak tersedia
+398	Padanan ini sudah tidak ada
+399	Item dalam padanan ini sudah dihapus. Edit padanan untuk menambahkan item baru.
+400	Jumpsuit
+401	Gaun
+402	Stoking panjang
+403	Untuk kesempatan apa?
+404	Musim
+405	Pilih padanan tersimpan atau padukan item yang Anda suka
+406	Pilih item ini
+407	Kantor
+408	Aksesori
+409	Syal wol merah anggur
+410	Paku hias
+411	Tidak dipakai {days} hari
+412	Paling lama tak dipakai
+413	Payung
+414	Sepatu
+415	Garis leher
+416	Hiasan leher
+417	Dasi
+418	Musim trench coat
+419	Rompi
+420	Loafer hitam
+421	Rok lipit hitam

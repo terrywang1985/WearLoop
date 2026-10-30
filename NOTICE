@@ -1,0 +1,31 @@
+WearLoop
+Copyright (C) 2026 WearLoop contributors
+
+The WearLoop application as a whole is distributed under the GNU Affero
+General Public License, version 3 (AGPL-3.0-only). See LICENSE for the full terms.
+You may use, study, modify and redistribute the program under those terms.
+The program is provided without warranty, to the extent permitted by law.
+
+Corresponding application source:
+https://github.com/terrywang1985/WearLoop
+
+Use the source tag/release associated with the distributed app version.
+No private signing key is needed to build and install your own modified copy;
+use your own development or release signing key.
+
+WearLoop bundles an unmodified Fashionpedia YOLOv8n ONNX model published by
+louisJLN/yolo8-fashionpedia. Its embedded Ultralytics AGPL-3.0 notice is retained.
+The upstream model card separately declares MIT; that declaration is preserved
+and is not represented as removing the underlying Ultralytics AGPL notice.
+See third_party/fashionpedia/README.md and MODEL_PROVENANCE.json for exact
+artifact hashes, revision, source/configuration material and limitations.
+
+The first-party modifications include the Flutter application, wardrobe
+storage and local inference integration, UI, localization, brand assets,
+generated demonstration clothing assets, tests and build/preparation tools.
+The AGPL open-source distribution was prepared on 2026-10-29.
+
+Third-party components retain their original copyright and license notices.
+See THIRD_PARTY_NOTICES.md and third_party/licenses/. No endorsement by
+Ultralytics, the Fashionpedia authors, Microsoft, Google or other upstream
+projects is claimed.

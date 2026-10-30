@@ -1,0 +1,37 @@
+{
+    "name": "WearLoop",
+    "short_name": "WearLoop",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#F7F8F2",
+    "theme_color": "#496650",
+    "description": "记录日常穿搭，让好衣服反复出场。",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/wearloop.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="WearLoop — 记录日常穿搭，发现被遗忘的衣服，让好衣服反复出场。">
+  <meta name="theme-color" content="#496650">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="WearLoop">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="icons/wearloop.svg"/>
+
+  <title>WearLoop</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <style>
+    html, body { margin: 0; background: #f7f8f2; }
+    .loading { position: fixed; inset: 0; display: grid; place-content: center; gap: 14px; text-align: center; color: #496650; font: 16px Georgia, serif; }
+    .loading svg { margin: auto; width: 48px; height: 48px; }
+    .loading small { color: #768171; font: 11px sans-serif; letter-spacing: 2px; }
+  </style>
+  <div class="loading" aria-label="WearLoop 正在加载">
+    <svg aria-hidden="true" viewBox="0 0 64 64"><rect width="64" height="64" rx="18" fill="#496650"/><path d="M28 23c0-7 11-8 11-1 0 4-7 6-7 10l17 10c2 1 1 4-1 4H16c-2 0-3-3-1-4l12-7" fill="none" stroke="#F7F8F2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 15c8-1 11 4 8 10-7 1-11-3-8-10Z" fill="#C9D5A9"/><path d="m45 23 5-5" fill="none" stroke="#496650" stroke-width="1.4" stroke-linecap="round"/></svg>
+    <strong>WearLoop</strong><small>WEAR MORE. WASTE LESS.</small>
+  </div>
+  <script>window.addEventListener('flutter-first-frame', () => document.querySelector('.loading')?.remove());</script>
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
+
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

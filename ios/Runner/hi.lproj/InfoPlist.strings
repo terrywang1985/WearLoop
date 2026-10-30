@@ -1,0 +1,3 @@
+// WearLoop system permission explanations.
+"NSCameraUsageDescription" = "अपने कपड़ों की तस्वीरें लेकर उन्हें अपनी WearLoop अलमारी में जोड़ें।";
+"NSPhotoLibraryUsageDescription" = "अपनी WearLoop अलमारी में जोड़ने के लिए कपड़ों की तस्वीरें चुनें।";

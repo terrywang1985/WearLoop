@@ -1,0 +1,421 @@
+{
+  "licenses": [
+    {
+      "package": "archive",
+      "licenseFile": "licenses/dart/archive-LICENSE"
+    },
+    {
+      "package": "archive",
+      "licenseFile": "licenses/dart/archive-LICENSE-other.md"
+    },
+    {
+      "package": "args",
+      "licenseFile": "licenses/dart/args-LICENSE"
+    },
+    {
+      "package": "async",
+      "licenseFile": "licenses/dart/async-LICENSE"
+    },
+    {
+      "package": "boolean_selector",
+      "licenseFile": "licenses/dart/boolean_selector-LICENSE"
+    },
+    {
+      "package": "characters",
+      "licenseFile": "licenses/dart/characters-LICENSE"
+    },
+    {
+      "package": "clock",
+      "licenseFile": "licenses/dart/clock-LICENSE"
+    },
+    {
+      "package": "code_assets",
+      "licenseFile": "licenses/dart/code_assets-LICENSE"
+    },
+    {
+      "package": "collection",
+      "licenseFile": "licenses/dart/collection-LICENSE"
+    },
+    {
+      "package": "cross_file",
+      "licenseFile": "licenses/dart/cross_file-LICENSE"
+    },
+    {
+      "package": "crypto",
+      "licenseFile": "licenses/dart/crypto-LICENSE"
+    },
+    {
+      "package": "cupertino_icons",
+      "licenseFile": "licenses/dart/cupertino_icons-LICENSE"
+    },
+    {
+      "package": "fake_async",
+      "licenseFile": "licenses/dart/fake_async-LICENSE"
+    },
+    {
+      "package": "ffi",
+      "licenseFile": "licenses/dart/ffi-LICENSE"
+    },
+    {
+      "package": "ffi_leak_tracker",
+      "licenseFile": "licenses/dart/ffi_leak_tracker-LICENSE"
+    },
+    {
+      "package": "file",
+      "licenseFile": "licenses/dart/file-LICENSE"
+    },
+    {
+      "package": "file_selector_linux",
+      "licenseFile": "licenses/dart/file_selector_linux-LICENSE"
+    },
+    {
+      "package": "file_selector_macos",
+      "licenseFile": "licenses/dart/file_selector_macos-LICENSE"
+    },
+    {
+      "package": "file_selector_platform_interface",
+      "licenseFile": "licenses/dart/file_selector_platform_interface-LICENSE"
+    },
+    {
+      "package": "file_selector_windows",
+      "licenseFile": "licenses/dart/file_selector_windows-LICENSE"
+    },
+    {
+      "package": "fixnum",
+      "licenseFile": "licenses/dart/fixnum-LICENSE"
+    },
+    {
+      "package": "flutter",
+      "licenseFile": "licenses/dart/flutter-LICENSE"
+    },
+    {
+      "package": "flutter_lints",
+      "licenseFile": "licenses/dart/flutter_lints-LICENSE"
+    },
+    {
+      "package": "flutter_localizations",
+      "licenseFile": "licenses/dart/flutter_localizations-LICENSE"
+    },
+    {
+      "package": "flutter_onnxruntime",
+      "licenseFile": "licenses/dart/flutter_onnxruntime-LICENSE"
+    },
+    {
+      "package": "flutter_plugin_android_lifecycle",
+      "licenseFile": "licenses/dart/flutter_plugin_android_lifecycle-LICENSE"
+    },
+    {
+      "package": "flutter_test",
+      "licenseFile": "licenses/dart/flutter_test-LICENSE"
+    },
+    {
+      "package": "flutter_web_plugins",
+      "licenseFile": "licenses/dart/flutter_web_plugins-LICENSE"
+    },
+    {
+      "package": "hooks",
+      "licenseFile": "licenses/dart/hooks-LICENSE"
+    },
+    {
+      "package": "http",
+      "licenseFile": "licenses/dart/http-LICENSE"
+    },
+    {
+      "package": "http_parser",
+      "licenseFile": "licenses/dart/http_parser-LICENSE"
+    },
+    {
+      "package": "image",
+      "licenseFile": "licenses/dart/image-LICENSE"
+    },
+    {
+      "package": "image",
+      "licenseFile": "licenses/dart/image-LICENSE-other.md"
+    },
+    {
+      "package": "image_picker",
+      "licenseFile": "licenses/dart/image_picker-LICENSE"
+    },
+    {
+      "package": "image_picker_android",
+      "licenseFile": "licenses/dart/image_picker_android-LICENSE"
+    },
+    {
+      "package": "image_picker_for_web",
+      "licenseFile": "licenses/dart/image_picker_for_web-LICENSE"
+    },
+    {
+      "package": "image_picker_ios",
+      "licenseFile": "licenses/dart/image_picker_ios-LICENSE"
+    },
+    {
+      "package": "image_picker_linux",
+      "licenseFile": "licenses/dart/image_picker_linux-LICENSE"
+    },
+    {
+      "package": "image_picker_macos",
+      "licenseFile": "licenses/dart/image_picker_macos-LICENSE"
+    },
+    {
+      "package": "image_picker_platform_interface",
+      "licenseFile": "licenses/dart/image_picker_platform_interface-LICENSE"
+    },
+    {
+      "package": "image_picker_windows",
+      "licenseFile": "licenses/dart/image_picker_windows-LICENSE"
+    },
+    {
+      "package": "intl",
+      "licenseFile": "licenses/dart/intl-LICENSE"
+    },
+    {
+      "package": "jni",
+      "licenseFile": "licenses/dart/jni-LICENSE"
+    },
+    {
+      "package": "jni_flutter",
+      "licenseFile": "licenses/dart/jni_flutter-LICENSE"
+    },
+    {
+      "package": "jni_util",
+      "licenseFile": "licenses/dart/jni_util-LICENSE"
+    },
+    {
+      "package": "leak_tracker",
+      "licenseFile": "licenses/dart/leak_tracker-LICENSE"
+    },
+    {
+      "package": "leak_tracker_flutter_testing",
+      "licenseFile": "licenses/dart/leak_tracker_flutter_testing-LICENSE"
+    },
+    {
+      "package": "leak_tracker_testing",
+      "licenseFile": "licenses/dart/leak_tracker_testing-LICENSE"
+    },
+    {
+      "package": "lints",
+      "licenseFile": "licenses/dart/lints-LICENSE"
+    },
+    {
+      "package": "logging",
+      "licenseFile": "licenses/dart/logging-LICENSE"
+    },
+    {
+      "package": "matcher",
+      "licenseFile": "licenses/dart/matcher-LICENSE"
+    },
+    {
+      "package": "material_color_utilities",
+      "licenseFile": "licenses/dart/material_color_utilities-LICENSE"
+    },
+    {
+      "package": "meta",
+      "licenseFile": "licenses/dart/meta-LICENSE"
+    },
+    {
+      "package": "mime",
+      "licenseFile": "licenses/dart/mime-LICENSE"
+    },
+    {
+      "package": "nested",
+      "licenseFile": "licenses/dart/nested-LICENSE"
+    },
+    {
+      "package": "objective_c",
+      "licenseFile": "licenses/dart/objective_c-LICENSE"
+    },
+    {
+      "package": "package_config",
+      "licenseFile": "licenses/dart/package_config-LICENSE"
+    },
+    {
+      "package": "path",
+      "licenseFile": "licenses/dart/path-LICENSE"
+    },
+    {
+      "package": "path_provider",
+      "licenseFile": "licenses/dart/path_provider-LICENSE"
+    },
+    {
+      "package": "path_provider_android",
+      "licenseFile": "licenses/dart/path_provider_android-LICENSE"
+    },
+    {
+      "package": "path_provider_foundation",
+      "licenseFile": "licenses/dart/path_provider_foundation-LICENSE"
+    },
+    {
+      "package": "path_provider_linux",
+      "licenseFile": "licenses/dart/path_provider_linux-LICENSE"
+    },
+    {
+      "package": "path_provider_platform_interface",
+      "licenseFile": "licenses/dart/path_provider_platform_interface-LICENSE"
+    },
+    {
+      "package": "path_provider_windows",
+      "licenseFile": "licenses/dart/path_provider_windows-LICENSE"
+    },
+    {
+      "package": "platform",
+      "licenseFile": "licenses/dart/platform-LICENSE"
+    },
+    {
+      "package": "plugin_platform_interface",
+      "licenseFile": "licenses/dart/plugin_platform_interface-LICENSE"
+    },
+    {
+      "package": "posix",
+      "licenseFile": "licenses/dart/posix-LICENSE"
+    },
+    {
+      "package": "provider",
+      "licenseFile": "licenses/dart/provider-LICENSE"
+    },
+    {
+      "package": "pub_semver",
+      "licenseFile": "licenses/dart/pub_semver-LICENSE"
+    },
+    {
+      "package": "record_use",
+      "licenseFile": "licenses/dart/record_use-LICENSE"
+    },
+    {
+      "package": "share_plus",
+      "licenseFile": "licenses/dart/share_plus-LICENSE"
+    },
+    {
+      "package": "share_plus_platform_interface",
+      "licenseFile": "licenses/dart/share_plus_platform_interface-LICENSE"
+    },
+    {
+      "package": "shared_preferences",
+      "licenseFile": "licenses/dart/shared_preferences-LICENSE"
+    },
+    {
+      "package": "shared_preferences_android",
+      "licenseFile": "licenses/dart/shared_preferences_android-LICENSE"
+    },
+    {
+      "package": "shared_preferences_foundation",
+      "licenseFile": "licenses/dart/shared_preferences_foundation-LICENSE"
+    },
+    {
+      "package": "shared_preferences_linux",
+      "licenseFile": "licenses/dart/shared_preferences_linux-LICENSE"
+    },
+    {
+      "package": "shared_preferences_platform_interface",
+      "licenseFile": "licenses/dart/shared_preferences_platform_interface-LICENSE"
+    },
+    {
+      "package": "shared_preferences_web",
+      "licenseFile": "licenses/dart/shared_preferences_web-LICENSE"
+    },
+    {
+      "package": "shared_preferences_windows",
+      "licenseFile": "licenses/dart/shared_preferences_windows-LICENSE"
+    },
+    {
+      "package": "sky_engine",
+      "licenseFile": "licenses/dart/sky_engine-license"
+    },
+    {
+      "package": "source_span",
+      "licenseFile": "licenses/dart/source_span-LICENSE"
+    },
+    {
+      "package": "sqflite",
+      "licenseFile": "licenses/dart/sqflite-LICENSE"
+    },
+    {
+      "package": "sqflite_android",
+      "licenseFile": "licenses/dart/sqflite_android-LICENSE"
+    },
+    {
+      "package": "sqflite_common",
+      "licenseFile": "licenses/dart/sqflite_common-LICENSE"
+    },
+    {
+      "package": "sqflite_darwin",
+      "licenseFile": "licenses/dart/sqflite_darwin-LICENSE"
+    },
+    {
+      "package": "sqflite_platform_interface",
+      "licenseFile": "licenses/dart/sqflite_platform_interface-LICENSE"
+    },
+    {
+      "package": "stack_trace",
+      "licenseFile": "licenses/dart/stack_trace-LICENSE"
+    },
+    {
+      "package": "stream_channel",
+      "licenseFile": "licenses/dart/stream_channel-LICENSE"
+    },
+    {
+      "package": "string_scanner",
+      "licenseFile": "licenses/dart/string_scanner-LICENSE"
+    },
+    {
+      "package": "synchronized",
+      "licenseFile": "licenses/dart/synchronized-LICENSE"
+    },
+    {
+      "package": "term_glyph",
+      "licenseFile": "licenses/dart/term_glyph-LICENSE"
+    },
+    {
+      "package": "test_api",
+      "licenseFile": "licenses/dart/test_api-LICENSE"
+    },
+    {
+      "package": "typed_data",
+      "licenseFile": "licenses/dart/typed_data-LICENSE"
+    },
+    {
+      "package": "url_launcher_linux",
+      "licenseFile": "licenses/dart/url_launcher_linux-LICENSE"
+    },
+    {
+      "package": "url_launcher_platform_interface",
+      "licenseFile": "licenses/dart/url_launcher_platform_interface-LICENSE"
+    },
+    {
+      "package": "url_launcher_web",
+      "licenseFile": "licenses/dart/url_launcher_web-LICENSE"
+    },
+    {
+      "package": "url_launcher_windows",
+      "licenseFile": "licenses/dart/url_launcher_windows-LICENSE"
+    },
+    {
+      "package": "uuid",
+      "licenseFile": "licenses/dart/uuid-LICENSE"
+    },
+    {
+      "package": "vector_math",
+      "licenseFile": "licenses/dart/vector_math-LICENSE"
+    },
+    {
+      "package": "vm_service",
+      "licenseFile": "licenses/dart/vm_service-LICENSE"
+    },
+    {
+      "package": "web",
+      "licenseFile": "licenses/dart/web-LICENSE"
+    },
+    {
+      "package": "win32",
+      "licenseFile": "licenses/dart/win32-LICENSE"
+    },
+    {
+      "package": "xdg_directories",
+      "licenseFile": "licenses/dart/xdg_directories-LICENSE"
+    },
+    {
+      "package": "yaml",
+      "licenseFile": "licenses/dart/yaml-LICENSE"
+    }
+  ],
+  "missing": []
+}

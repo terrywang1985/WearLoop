@@ -1,0 +1,62 @@
+{
+  "title": "Chính sách quyền riêng tư",
+  "back": "Quay lại",
+  "updated": "Cập nhật: 2026-10-29",
+  "summary": "WearLoop là nhật ký tủ đồ và trang phục. Chính sách này mô tả cách ứng dụng hiện tại xử lý thông tin.",
+  "contactLabel": "Liên hệ về quyền riêng tư",
+  "contactPending": "Bản dựng này chưa được cấu hình thông tin liên hệ.",
+  "onlineLabel": "Chính sách trực tuyến",
+  "loading": "Đang tải chính sách…",
+  "error": "Không thể tải chính sách.",
+  "retry": "Thử lại",
+  "appName": "WearLoop",
+  "languageCode": "vi",
+  "updatedDate": "2026-10-29",
+  "sections": [
+    {
+      "id": "local_data",
+      "title": "Dữ liệu trên thiết bị",
+      "body": "Tên quần áo, danh mục, màu, mùa, thương hiệu, giá, ghi chú, bộ đồ và nhật ký mặc được lưu trên thiết bị. Ứng dụng Android dùng cơ sở dữ liệu SQLite cục bộ và tệp ảnh riêng của ứng dụng; ngôn ngữ và tùy chọn cũng lưu cục bộ. Bản xem trước web dùng bộ nhớ trình duyệt. Chức năng tủ đồ chính hoạt động ngoại tuyến."
+    },
+    {
+      "id": "photos",
+      "title": "Ảnh và máy ảnh",
+      "body": "Khi bạn chọn thêm ảnh, WearLoop dùng máy ảnh hoặc trình chọn ảnh của hệ thống. Ứng dụng đọc ảnh đã chọn để hiển thị, thu nhỏ hoặc cắt rồi lưu bản sao cùng món đồ. Hệ điều hành kiểm soát quyền truy cập. WearLoop không quét toàn bộ thư viện ảnh ở chế độ nền."
+    },
+    {
+      "id": "recognition",
+      "title": "Nhận diện trên thiết bị",
+      "body": "Trong bản dựng có nhận diện quần áo cục bộ, mô hình AI đi kèm phát hiện và cắt ảnh món đồ ngay trên thiết bị. Ảnh và kết quả không được tải lên máy chủ của nhà phát triển để xử lý. Hãy kiểm tra trước khi lưu vì kết quả có thể sai. Chức năng này không nhận dạng danh tính con người."
+    },
+    {
+      "id": "sharing",
+      "title": "Chia sẻ do bạn chọn",
+      "body": "Khi chia sẻ bộ đồ, WearLoop chuẩn bị ảnh hoặc nội dung bạn chọn rồi mở menu chia sẻ của thiết bị. Ứng dụng hoặc người nhận được chọn sẽ nhận nội dung và xử lý theo cách riêng. Xóa bản ghi cục bộ không xóa các bản sao đã chia sẻ ra ngoài."
+    },
+    {
+      "id": "developer",
+      "title": "Thu thập và dịch vụ của nhà phát triển",
+      "body": "WearLoop không có hệ thống tài khoản, SDK quảng cáo hay SDK phân tích. Ứng dụng không gửi dữ liệu tủ đồ, ảnh, nhật ký mặc hoặc mã định danh thiết bị tới máy chủ do nhà phát triển vận hành. Nhà phát triển không nhận nội dung cục bộ này khi bạn dùng ứng dụng bình thường. Điều này không bao gồm thông tin bạn chủ động chia sẻ hoặc gửi email."
+    },
+    {
+      "id": "backup",
+      "title": "Sao lưu và chuyển thiết bị",
+      "body": "Hệ điều hành hoặc nhà sản xuất có thể sao lưu hay chuyển dữ liệu theo cài đặt thiết bị và cấu hình sao lưu của ứng dụng. Các dịch vụ này tách biệt với tài khoản WearLoop hoặc đám mây của nhà phát triển. Quản lý bản sao lưu, chuyển và khôi phục trong cài đặt hệ thống hoặc nhà cung cấp tương ứng."
+    },
+    {
+      "id": "deletion",
+      "title": "Lưu giữ và xóa",
+      "body": "Bản ghi cục bộ tồn tại cho đến khi bạn xóa, xóa dữ liệu WearLoop hoặc gỡ cài đặt. Cài đặt > Xóa toàn bộ dữ liệu sẽ xóa quần áo, bộ đồ, nhật ký và bản sao ảnh ứng dụng đã lưu. Xóa dữ liệu hoặc gỡ qua hệ thống sẽ xóa bộ nhớ riêng theo cơ chế của hệ điều hành. Ảnh gốc trong thư viện, tệp xuất hoặc chia sẻ, bản sao lưu và bản sao trên thiết bị khác cần quản lý riêng. Sao lưu hệ thống có thể khôi phục dữ liệu khi cài lại."
+    },
+    {
+      "id": "contact",
+      "title": "Liên hệ nhà phát triển",
+      "body": "Dùng liên hệ bên dưới để gửi câu hỏi. Nếu bạn chủ động gửi email, địa chỉ, nội dung và tệp đính kèm sẽ được gửi tới người nhận và xử lý bởi các dịch vụ email liên quan. Chúng tôi dùng thư trao đổi để trả lời yêu cầu; tránh gửi ảnh hay thông tin cá nhân không cần thiết. Nhà phát triển không thể đọc hoặc xóa dữ liệu chỉ có trên thiết bị của bạn. Bạn có thể yêu cầu xóa thư hỗ trợ qua cùng địa chỉ."
+    },
+    {
+      "id": "online_policy",
+      "title": "Đọc chính sách trực tuyến",
+      "body": "Văn bản trong ứng dụng có thể đọc ngoại tuyến. Khi mở bản trực tuyến, trình duyệt kết nối với dịch vụ lưu trữ web; dịch vụ có thể nhận thông tin yêu cầu thông thường như địa chỉ IP theo cài đặt của họ. Các trang được cung cấp không có quảng cáo, mã phân tích hay cookie theo dõi. Thay đổi về xử lý thông tin sẽ được cập nhật tại đây."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Politique de confidentialité",
+  "back": "Retour",
+  "updated": "Mise à jour : 2026-10-29",
+  "summary": "WearLoop est un journal de dressing et de tenues. Cette politique décrit le traitement des informations dans l'application actuelle.",
+  "contactLabel": "Contact pour la confidentialité",
+  "contactPending": "Aucun contact n'est configuré pour cette version.",
+  "onlineLabel": "Politique en ligne",
+  "loading": "Chargement de la politique…",
+  "error": "Impossible de charger la politique.",
+  "retry": "Réessayer",
+  "appName": "WearLoop",
+  "languageCode": "fr",
+  "updatedDate": "2026-10-29",
+  "sections": [
+    {
+      "id": "local_data",
+      "title": "Vos données sur votre appareil",
+      "body": "Noms, catégories, couleurs, saisons, marques, prix, notes, tenues et historique sont stockés sur votre appareil. L'app Android utilise une base SQLite locale et des fichiers d'image propres à l'app. La langue et les préférences sont également locales. L'aperçu web utilise le stockage du navigateur. Les fonctions principales du dressing sont disponibles hors connexion."
+    },
+    {
+      "id": "photos",
+      "title": "Photos et appareil photo",
+      "body": "Si vous choisissez d'ajouter une photo, WearLoop utilise l'appareil photo ou le sélecteur système. La photo sélectionnée est lue pour l'afficher, la redimensionner ou la recadrer et en conserver une copie avec la pièce. Le système gère l'accès. WearLoop ne parcourt pas toute votre photothèque en arrière-plan."
+    },
+    {
+      "id": "recognition",
+      "title": "Reconnaissance sur l'appareil",
+      "body": "Dans les versions proposant la reconnaissance locale, un modèle d'IA intégré détecte et recadre les vêtements sur votre appareil. Ce traitement n'envoie ni photos ni résultats à un serveur du développeur. Vérifiez les résultats avant de les enregistrer : des erreurs sont possibles. Cette fonction n'identifie pas les personnes."
+    },
+    {
+      "id": "sharing",
+      "title": "Partage à votre initiative",
+      "body": "Pour partager une tenue, l'app prépare l'image ou le texte choisi et ouvre le menu de partage. L'app ou le destinataire sélectionné reçoit le contenu et le traite selon ses propres pratiques. Supprimer l'enregistrement local ne supprime pas les copies déjà partagées."
+    },
+    {
+      "id": "developer",
+      "title": "Collecte et services du développeur",
+      "body": "WearLoop ne comporte ni compte, ni SDK publicitaire, ni SDK d'analyse. L'app n'envoie pas les données du dressing, photos, historique ou identifiants de l'appareil à un serveur du développeur. Celui-ci ne reçoit pas ce contenu local lors d'une utilisation normale. Cela ne couvre pas ce que vous partagez ou envoyez volontairement par e-mail."
+    },
+    {
+      "id": "backup",
+      "title": "Sauvegarde et transfert système",
+      "body": "Le système ou le fabricant peut sauvegarder ou transférer les données selon vos réglages et la configuration de sauvegarde de l'app. Ces services sont distincts d'un compte WearLoop ou d'un cloud du développeur. Gérez sauvegardes, transferts et copies restaurées dans les réglages du système ou du prestataire concerné."
+    },
+    {
+      "id": "deletion",
+      "title": "Conservation et suppression",
+      "body": "Les données locales restent jusqu'à leur suppression, l'effacement des données de l'app ou sa désinstallation. Réglages > Effacer toutes les données supprime pièces, tenues, historique et copies d'images enregistrées par l'app. L'effacement système et la désinstallation retirent le stockage propre à l'app selon le fonctionnement du système. Photos d'origine, fichiers exportés ou partagés, sauvegardes et copies sur d'autres appareils se gèrent séparément. Une sauvegarde peut restaurer des données à la réinstallation."
+    },
+    {
+      "id": "contact",
+      "title": "Contacter le développeur",
+      "body": "Utilisez le contact ci-dessous pour vos questions. Un e-mail envoyé volontairement transmet votre adresse, le message et les pièces jointes au destinataire et aux services de messagerie concernés. Nous utilisons ces échanges pour répondre à votre demande ; évitez les photos ou informations personnelles inutiles. Le développeur ne peut pas lire ni effacer le dressing présent uniquement sur votre appareil. Demandez la suppression des échanges d'assistance au même contact."
+    },
+    {
+      "id": "online_policy",
+      "title": "Consulter la politique en ligne",
+      "body": "Le texte de l'app est lisible hors connexion. En ouvrant la version en ligne, votre navigateur contacte l'hébergeur, qui peut recevoir les informations habituelles d'une requête, comme l'adresse IP, selon ses paramètres. Les pages fournies ne comportent ni publicité, ni script d'analyse, ni cookie de suivi. Les changements de traitement seront indiqués dans une politique mise à jour."
+    }
+  ]
+}

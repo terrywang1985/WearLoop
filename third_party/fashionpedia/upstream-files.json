@@ -1,0 +1,42 @@
+{
+  "repository": "https://huggingface.co/louisJLN/yolo8-fashionpedia",
+  "commit": "2341a0b6fccba6c2349a429d243d15956b5973ee",
+  "files": [
+    {
+      "file": "upstream/README.md",
+      "upstreamPath": "README.md",
+      "sha256": "9ab4817f83532570553dd9957c1b4d7449ed06219d8b9395585305ff8fcca435",
+      "modified": false
+    },
+    {
+      "file": "upstream/fashionpedia.yaml",
+      "upstreamPath": "fashionpedia.yaml",
+      "sha256": "c405ec6ae5c147fcc4854703a19d41fc77a7affed4768d7da62a14c6258d8e87",
+      "modified": false
+    },
+    {
+      "file": "upstream/yolo8.ipynb",
+      "upstreamPath": "yolo8.ipynb",
+      "sha256": "d49dd9926e2b458f46846b58c9a4d86cd4b92c62d932510c0cea7fee05c2dbd3",
+      "modified": false
+    },
+    {
+      "file": "upstream/dataset-export-yolo.ipynb",
+      "upstreamPath": "dataset-export-yolo.ipynb",
+      "sha256": "912c9030647de4a55a38337185be51478ddf211daae804fe7bfbe6c06937f116",
+      "modified": false
+    },
+    {
+      "file": "upstream/training-args.yaml",
+      "upstreamPath": "results/training-metrics/args.yaml",
+      "sha256": "0b4a8c5087e0400b95cb7626894a10357b6c2529924247250053a907e27069a4",
+      "modified": false
+    },
+    {
+      "file": "upstream/training-report.md",
+      "upstreamPath": "results/yolovn8-fashionpedia-1.md",
+      "sha256": "c26ae2cd796f12d0447b1cf0c7163ad197710322f5bca71000b74c16d020c7c2",
+      "modified": false
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Política de privacidad",
+  "back": "Volver",
+  "updated": "Actualización: 2026-10-29",
+  "summary": "WearLoop es un diario de armario y conjuntos. Esta política explica cómo trata la información la versión actual de la aplicación.",
+  "contactLabel": "Contacto de privacidad",
+  "contactPending": "No se ha configurado un contacto para esta compilación.",
+  "onlineLabel": "Política de privacidad en línea",
+  "loading": "Cargando la política…",
+  "error": "No se pudo cargar la política.",
+  "retry": "Reintentar",
+  "appName": "WearLoop",
+  "languageCode": "es",
+  "updatedDate": "2026-10-29",
+  "sections": [
+    {
+      "id": "local_data",
+      "title": "Datos en tu dispositivo",
+      "body": "Los nombres, categorías, colores, temporadas, marcas, precios y notas de prendas, conjuntos y registros de uso se guardan en tu dispositivo. La app Android usa una base SQLite local y archivos de imagen propios de la aplicación. El idioma y los ajustes también son locales. La vista previa web usa el almacenamiento del navegador. Las funciones principales del armario funcionan sin conexión."
+    },
+    {
+      "id": "photos",
+      "title": "Fotos y cámara",
+      "body": "Si eliges añadir una foto, se utiliza la cámara o el selector de fotos del sistema. La foto seleccionada se lee para mostrarla, reducirla o recortarla y guardar una copia con la prenda. El sistema operativo controla el acceso. WearLoop no examina toda tu galería en segundo plano."
+    },
+    {
+      "id": "recognition",
+      "title": "Reconocimiento en el dispositivo",
+      "body": "En las compilaciones con reconocimiento local, un modelo de IA incluido detecta prendas y recorta imágenes en tu dispositivo. No se envían fotos ni resultados a un servidor del desarrollador para este proceso. Revisa los resultados antes de guardarlos: pueden contener errores. La función no identifica a personas."
+    },
+    {
+      "id": "sharing",
+      "title": "Compartir por elección propia",
+      "body": "Al compartir un conjunto, la app prepara la imagen o el texto elegido y abre el menú de compartir. La aplicación o el destinatario seleccionado recibe el contenido y lo trata según sus propias prácticas. Borrar el registro local no elimina las copias que ya has compartido."
+    },
+    {
+      "id": "developer",
+      "title": "Recogida y servicios del desarrollador",
+      "body": "WearLoop no tiene cuentas, SDK de publicidad ni SDK de análisis. No envía datos del armario, fotos, registros de uso ni identificadores del dispositivo a servidores del desarrollador. El desarrollador no recibe este contenido local durante el uso normal. Esto no incluye información que decidas compartir o enviar por correo."
+    },
+    {
+      "id": "backup",
+      "title": "Copias de seguridad y transferencias",
+      "body": "El sistema operativo o fabricante puede copiar o transferir datos según los ajustes del dispositivo y la configuración de respaldo de la app. Estos servicios son independientes de una cuenta WearLoop o de una nube del desarrollador. Gestiona las copias, transferencias y restauraciones en los ajustes del sistema o proveedor correspondiente."
+    },
+    {
+      "id": "deletion",
+      "title": "Conservación y eliminación",
+      "body": "Los registros locales permanecen hasta que los borres, limpies los datos de WearLoop o desinstales la app. Ajustes > Borrar todos los datos elimina prendas, conjuntos, registros y copias de imágenes guardadas por la app. El borrado de datos o la desinstalación del sistema elimina el almacenamiento propio según el comportamiento del sistema operativo. Gestiona aparte los originales de la galería, archivos exportados o compartidos, copias de seguridad y otros dispositivos. Una copia del sistema puede restaurar datos al reinstalar."
+    },
+    {
+      "id": "contact",
+      "title": "Contactar con el desarrollador",
+      "body": "Utiliza el contacto indicado abajo para tus consultas. Si envías un correo, tu dirección, mensaje y adjuntos se envían al destinatario y pasan por los servicios de correo implicados. Usamos esa correspondencia para atender la consulta; evita enviar fotos o datos personales innecesarios. El desarrollador no puede leer ni borrar datos del armario que solo estén en tu dispositivo. Solicita la eliminación de correos de soporte a través del mismo contacto."
+    },
+    {
+      "id": "online_policy",
+      "title": "Leer esta política en línea",
+      "body": "El texto dentro de la app se puede leer sin conexión. Si abres la política en línea, tu navegador conecta con el alojamiento web, que puede recibir información normal de la solicitud, como la dirección IP, según su configuración. Las páginas suministradas no incluyen anuncios, scripts de análisis ni cookies de seguimiento. Actualizaremos esta política si cambia el tratamiento de información."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "file": "third_party/onnxruntime/LICENSE",
+    "source": "https://raw.githubusercontent.com/microsoft/onnxruntime/v1.28.0/LICENSE",
+    "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+  },
+  {
+    "file": "third_party/onnxruntime/ThirdPartyNotices.txt",
+    "source": "https://raw.githubusercontent.com/microsoft/onnxruntime/v1.28.0/ThirdPartyNotices.txt",
+    "sha256": "0e07b95f3a8d6230037707c5c4a2b554d12c4cb67369669ac255635528ffcee2"
+  },
+  {
+    "file": "third_party/ultralytics/yolov8.yaml",
+    "source": "https://raw.githubusercontent.com/ultralytics/ultralytics/v8.1.47/ultralytics/cfg/models/v8/yolov8.yaml",
+    "sha256": "56349efd5d869fd66926bc13b73d00ebfe88329e94bae80d891eda112851e6b7"
+  },
+  {
+    "file": "third_party/ultralytics/pyproject.toml",
+    "source": "https://raw.githubusercontent.com/ultralytics/ultralytics/v8.1.47/pyproject.toml",
+    "sha256": "752d13dcb500c10f1aa7dc4957f780355a091e17b365b28a4dd4c8749b35774d"
+  }
+]

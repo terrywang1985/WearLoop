@@ -1,0 +1,627 @@
+import 'dart:math' as math;
+
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../models.dart';
+import '../store.dart';
+import '../widgets/item_thumb.dart';
+import 'item_detail_screen.dart';
+import 'item_edit_screen.dart';
+import 'smart_import_screen.dart';
+
+enum _Sort {
+  recent('最近添加'),
+  mostWorn('穿得最多'),
+  leastWorn('穿得最少'),
+  idle('闲置最久'),
+  cpw('单次成本最高');
+
+  const _Sort(this.label);
+  final String label;
+}
+
+class WardrobeScreen extends StatefulWidget {
+  const WardrobeScreen({super.key});
+
+  @override
+  State<WardrobeScreen> createState() => _WardrobeScreenState();
+}
+
+class _WardrobeScreenState extends State<WardrobeScreen> {
+  final _search = TextEditingController();
+  Category? _category;
+  _Sort _sort = _Sort.recent;
+  String _query = '';
+
+  @override
+  void dispose() {
+    _search.dispose();
+    super.dispose();
+  }
+
+  void _clearFilters() {
+    _search.clear();
+    setState(() {
+      _query = '';
+      _category = null;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final store = context.watch<WardrobeStore>();
+    final theme = Theme.of(context);
+    final colors = theme.colorScheme;
+    final query = _query.trim().toLowerCase();
+    final list = store.items.where((item) {
+      if (_category != null && item.category != _category) return false;
+      return query.isEmpty ||
+          '${item.name} ${item.brand} ${item.notes} ${item.category.label}'
+              .toLowerCase()
+              .contains(query);
+    }).toList();
+    switch (_sort) {
+      case _Sort.recent:
+        list.sort((a, b) => b.createdAt.compareTo(a.createdAt));
+      case _Sort.mostWorn:
+        list.sort((a, b) => store.wearCount(b.id) - store.wearCount(a.id));
+      case _Sort.leastWorn:
+        list.sort((a, b) => store.wearCount(a.id) - store.wearCount(b.id));
+      case _Sort.idle:
+        list.sort((a, b) => store.idleDays(b) - store.idleDays(a));
+      case _Sort.cpw:
+        list.sort(
+          (a, b) =>
+              (store.costPerWear(b) ?? 0).compareTo(store.costPerWear(a) ?? 0),
+        );
+    }
+
+    return Scaffold(
+      body: SafeArea(
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final horizontal = constraints.maxWidth >= 700 ? 36.0 : 20.0;
+            final width =
+                math.min(1192.0, constraints.maxWidth) - horizontal * 2;
+            final columns = width < 300
+                ? 1
+                : (width / 200).floor().clamp(2, 5).toInt();
+            final gap = width >= 600 ? 20.0 : 12.0;
+            final cardWidth = (width - gap * (columns - 1)) / columns;
+            return Align(
+              alignment: Alignment.topCenter,
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 1192),
+                child: CustomScrollView(
+                  key: const PageStorageKey('wardrobe_scroll'),
+                  slivers: [
+                    SliverPadding(
+                      padding: EdgeInsets.fromLTRB(
+                        horizontal,
+                        32,
+                        horizontal,
+                        0,
+                      ),
+                      sliver: SliverToBoxAdapter(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'THE WARDROBE',
+                                        style: theme.textTheme.labelSmall
+                                            ?.copyWith(
+                                              letterSpacing: 2.5,
+                                              color: colors.primary,
+                                              fontWeight: FontWeight.w700,
+                                            ),
+                                      ),
+                                      const SizedBox(height: 8),
+                                      Text(
+                                        '我的衣橱',
+                                        style: theme.textTheme.headlineLarge
+                                            ?.copyWith(
+                                              fontSize: width < 400 ? 29 : 34,
+                                              fontWeight: FontWeight.w700,
+                                              letterSpacing: -1,
+                                            ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                FilledButton.icon(
+                                  onPressed: () => _add(context),
+                                  icon: const Icon(Icons.add, size: 18),
+                                  label: const Text('添加衣服'),
+                                  style: FilledButton.styleFrom(
+                                    minimumSize: const Size(0, 44),
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 16,
+                                    ),
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(14),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              '${store.items.length} 件单品，让每一件喜欢都有出场的机会。',
+                              style: theme.textTheme.bodyMedium?.copyWith(
+                                color: colors.onSurfaceVariant,
+                                height: 1.6,
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            FilledButton.tonalIcon(
+                              onPressed: () => _smartImport(context),
+                              icon: const Icon(Icons.auto_awesome, size: 18),
+                              label: const Text('AI 拍照识别全身单品'),
+                            ),
+                            const SizedBox(height: 28),
+                            TextField(
+                              controller: _search,
+                              onChanged: (value) =>
+                                  setState(() => _query = value),
+                              textInputAction: TextInputAction.search,
+                              decoration: InputDecoration(
+                                hintText: '搜索衣服名称、品牌或备注',
+                                prefixIcon: const Icon(
+                                  Icons.search_rounded,
+                                  size: 22,
+                                ),
+                                suffixIcon: _query.isEmpty
+                                    ? null
+                                    : IconButton(
+                                        tooltip: '清空搜索',
+                                        onPressed: () {
+                                          _search.clear();
+                                          setState(() => _query = '');
+                                        },
+                                        icon: const Icon(Icons.close, size: 18),
+                                      ),
+                                filled: true,
+                                fillColor: colors.surface,
+                                contentPadding: const EdgeInsets.symmetric(
+                                  vertical: 17,
+                                ),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  borderSide: BorderSide(
+                                    color: colors.outlineVariant,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 18),
+                            SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                children: [
+                                  _chip('全部', store.items.length, null),
+                                  for (final category in Category.values)
+                                    _chip(
+                                      category.label,
+                                      store.items
+                                          .where((i) => i.category == category)
+                                          .length,
+                                      category,
+                                    ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 26),
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Text.rich(
+                                    TextSpan(
+                                      children: [
+                                        TextSpan(
+                                          text: query.isNotEmpty
+                                              ? '搜索结果'
+                                              : _category?.label ?? '全部单品',
+                                          style: theme.textTheme.titleSmall
+                                              ?.copyWith(
+                                                fontWeight: FontWeight.w700,
+                                              ),
+                                        ),
+                                        TextSpan(
+                                          text: '  ${list.length} 件',
+                                          style: theme.textTheme.bodySmall
+                                              ?.copyWith(
+                                                color: colors.onSurfaceVariant,
+                                              ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                PopupMenuButton<_Sort>(
+                                  tooltip: '单品排序',
+                                  initialValue: _sort,
+                                  onSelected: (s) => setState(() => _sort = s),
+                                  itemBuilder: (_) => [
+                                    for (final s in _Sort.values)
+                                      CheckedPopupMenuItem(
+                                        value: s,
+                                        checked: s == _sort,
+                                        child: Text(s.label),
+                                      ),
+                                  ],
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 8,
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Icon(
+                                          Icons.sort_rounded,
+                                          size: 17,
+                                          color: colors.onSurfaceVariant,
+                                        ),
+                                        const SizedBox(width: 5),
+                                        Text(
+                                          _sort.label,
+                                          style: theme.textTheme.bodySmall
+                                              ?.copyWith(
+                                                color: colors.onSurfaceVariant,
+                                              ),
+                                        ),
+                                        const SizedBox(width: 2),
+                                        const Icon(Icons.expand_more, size: 16),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 14),
+                          ],
+                        ),
+                      ),
+                    ),
+                    if (list.isEmpty)
+                      SliverFillRemaining(
+                        hasScrollBody: false,
+                        child: Padding(
+                          padding: EdgeInsets.fromLTRB(
+                            horizontal,
+                            36,
+                            horizontal,
+                            64,
+                          ),
+                          child: _Empty(
+                            search: query.isNotEmpty,
+                            hasItems: store.items.isNotEmpty,
+                            category: _category,
+                            onAdd: () => _add(context),
+                            onReset: _clearFilters,
+                          ),
+                        ),
+                      )
+                    else
+                      SliverPadding(
+                        padding: EdgeInsets.fromLTRB(
+                          horizontal,
+                          0,
+                          horizontal,
+                          36,
+                        ),
+                        sliver: SliverGrid.builder(
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                crossAxisCount: columns,
+                                crossAxisSpacing: gap,
+                                mainAxisSpacing: gap,
+                                mainAxisExtent: cardWidth * 1.03 + 72,
+                              ),
+                          itemCount: list.length,
+                          itemBuilder: (_, index) => _ItemCard(
+                            item: list[index],
+                            worn: store.wearCount(list[index].id),
+                            idleDays: store.idleDays(list[index]),
+                            forgotten:
+                                store.idleDays(list[index]) >=
+                                store.forgottenDays,
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) =>
+                                    ItemDetailScreen(itemId: list[index].id),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+
+  Widget _chip(String label, int count, Category? value) {
+    final selected = _category == value;
+    final colors = Theme.of(context).colorScheme;
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: ChoiceChip(
+        selected: selected,
+        showCheckmark: false,
+        onSelected: (_) => setState(() => _category = value),
+        selectedColor: colors.primary,
+        backgroundColor: colors.surface,
+        side: BorderSide(
+          color: selected ? colors.primary : colors.outlineVariant,
+        ),
+        shape: const StadiumBorder(),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 9),
+        label: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              label,
+              style: TextStyle(
+                color: selected ? colors.onPrimary : colors.onSurface,
+                fontWeight: selected ? FontWeight.w600 : FontWeight.w500,
+              ),
+            ),
+            const SizedBox(width: 7),
+            Text(
+              '$count',
+              style: TextStyle(
+                fontSize: 11,
+                color: selected
+                    ? colors.onPrimary.withValues(alpha: 0.7)
+                    : colors.onSurfaceVariant,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _add(BuildContext context) => Navigator.push(
+    context,
+    MaterialPageRoute(
+      fullscreenDialog: true,
+      builder: (_) => ItemEditScreen(initialCategory: _category),
+    ),
+  );
+
+  Future<void> _smartImport(BuildContext context) async {
+    final count = await Navigator.push<int>(
+      context,
+      MaterialPageRoute(
+        fullscreenDialog: true,
+        builder: (_) => const SmartImportScreen(),
+      ),
+    );
+    if (!context.mounted || count == null || count <= 0) return;
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text('已用本地 AI 添加 $count 件单品')));
+  }
+}
+
+class _ItemCard extends StatelessWidget {
+  const _ItemCard({
+    required this.item,
+    required this.worn,
+    required this.idleDays,
+    required this.forgotten,
+    required this.onTap,
+  });
+
+  final ClothingItem item;
+  final int worn;
+  final int idleDays;
+  final bool forgotten;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colors = theme.colorScheme;
+    return Material(
+      color: colors.surface,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(22),
+        side: BorderSide(color: colors.outlineVariant),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(9, 9, 9, 0),
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    ItemThumb(item, radius: 15),
+                    if (forgotten)
+                      Positioned(
+                        top: 8,
+                        left: 8,
+                        child: Tooltip(
+                          message: '已经 $idleDays 天没穿过，试着让它重新出场',
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 8,
+                              vertical: 5,
+                            ),
+                            decoration: BoxDecoration(
+                              color: colors.surface.withValues(alpha: 0.94),
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(
+                                  Icons.wb_twilight_rounded,
+                                  size: 13,
+                                  color: colors.primary,
+                                ),
+                                const SizedBox(width: 4),
+                                Text(
+                                  '待唤醒',
+                                  style: theme.textTheme.labelSmall?.copyWith(
+                                    fontSize: 10,
+                                    color: colors.primary,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(13, 13, 13, 15),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    item.name,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: theme.textTheme.titleSmall?.copyWith(
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Row(
+                    children: [
+                      Container(
+                        width: 7,
+                        height: 7,
+                        decoration: BoxDecoration(
+                          color: item.color,
+                          shape: BoxShape.circle,
+                          border: Border.all(color: colors.outlineVariant),
+                        ),
+                      ),
+                      const SizedBox(width: 5),
+                      Expanded(
+                        child: Text(
+                          '${item.category.label} · ${worn == 0 ? '还未穿过' : '穿过 $worn 次'}',
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: theme.textTheme.labelSmall?.copyWith(
+                            color: colors.onSurfaceVariant,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _Empty extends StatelessWidget {
+  const _Empty({
+    required this.search,
+    required this.hasItems,
+    required this.category,
+    required this.onAdd,
+    required this.onReset,
+  });
+
+  final bool search;
+  final bool hasItems;
+  final Category? category;
+  final VoidCallback onAdd;
+  final VoidCallback onReset;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colors = theme.colorScheme;
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            width: 84,
+            height: 84,
+            decoration: BoxDecoration(
+              color: colors.primaryContainer.withValues(alpha: 0.45),
+              borderRadius: BorderRadius.circular(28),
+            ),
+            child: Icon(
+              search ? Icons.search_rounded : Icons.checkroom_outlined,
+              size: 34,
+              color: colors.primary,
+            ),
+          ),
+          const SizedBox(height: 22),
+          Text(
+            search
+                ? '没有找到这件单品'
+                : hasItems
+                ? '这个分类还空着'
+                : '从第一件喜欢的衣服开始',
+            textAlign: TextAlign.center,
+            style: theme.textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+          const SizedBox(height: 9),
+          Text(
+            search
+                ? '换个关键词，或试试其他分类。'
+                : hasItems
+                ? '把喜欢的${category?.label ?? '衣服'}收进来，为日常添一点灵感。'
+                : '记录你的衣物，让那些喜欢被看见、被反复穿着。',
+            textAlign: TextAlign.center,
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: colors.onSurfaceVariant,
+              height: 1.7,
+            ),
+          ),
+          const SizedBox(height: 22),
+          FilledButton.icon(
+            onPressed: search ? onReset : onAdd,
+            icon: Icon(search ? Icons.refresh_rounded : Icons.add, size: 18),
+            label: Text(
+              search
+                  ? '清除筛选'
+                  : hasItems
+                  ? '添加${category?.label ?? '衣服'}'
+                  : '添加第一件衣服',
+            ),
+          ),
+          if (hasItems && !search)
+            TextButton(onPressed: onReset, child: const Text('查看全部单品')),
+        ],
+      ),
+    );
+  }
+}

@@ -1,0 +1,7 @@
+# Copy to android/key.properties or set WEARLOOP_KEY_PROPERTIES to an external file.
+# Relative storeFile paths are resolved against this properties file's directory.
+# Use forward slashes in Windows paths. Never commit the real file or keystore.
+storeFile=C:/secure/wearloop-upload.jks
+storePassword=REPLACE_LOCALLY
+keyAlias=wearloop-upload
+keyPassword=REPLACE_LOCALLY

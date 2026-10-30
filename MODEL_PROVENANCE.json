@@ -1,0 +1,29 @@
+{
+  "sha256": "6b581af3abe2b4ae97a84cbe9aef5ae37207a68ee966d22b0b8d7969d79e6920",
+  "sizeBytes": 12273953,
+  "producer": "pytorch",
+  "producerVersion": "2.1.1",
+  "metadata": {
+    "description": "Ultralytics best model trained on fashionpedia.yaml",
+    "author": "Ultralytics",
+    "date": "2024-04-19T10:20:40.473155",
+    "version": "8.1.47",
+    "license": "AGPL-3.0 License (https://ultralytics.com/license)",
+    "docs": "https://docs.ultralytics.com",
+    "stride": "32",
+    "task": "detect",
+    "batch": "1",
+    "imgsz": "[640, 640]",
+    "names": "{0: 'shirt, blouse', 1: 'top, t-shirt, sweatshirt', 2: 'sweater', 3: 'cardigan', 4: 'jacket', 5: 'vest', 6: 'pants', 7: 'shorts', 8: 'skirt', 9: 'coat', 10: 'dress', 11: 'jumpsuit', 12: 'cape', 13: 'glasses', 14: 'hat', 15: 'headband, head covering, hair accessory', 16: 'tie', 17: 'glove', 18: 'watch', 19: 'belt', 20: 'leg warmer', 21: 'tights, stockings', 22: 'sock', 23: 'shoe', 24: 'bag, wallet', 25: 'scarf', 26: 'umbrella', 27: 'hood', 28: 'collar', 29: 'lapel', 30: 'epaulette', 31: 'sleeve', 32: 'pocket', 33: 'neckline', 34: 'buckle', 35: 'zipper', 36: 'applique', 37: 'bead', 38: 'bow', 39: 'flower', 40: 'fringe', 41: 'ribbon', 42: 'rivet', 43: 'ruffle', 44: 'sequin', 45: 'tassel'}"
+  },
+  "runtimeAsset": "assets/models/fashionpedia_yolov8n.onnx",
+  "upstreamRepository": "https://huggingface.co/louisJLN/yolo8-fashionpedia",
+  "upstreamRevision": "2341a0b6fccba6c2349a429d243d15956b5973ee",
+  "upstreamPath": "results/yolov8n-fashionpedia-1.onnx",
+  "upstreamLfsSha256": "6b581af3abe2b4ae97a84cbe9aef5ae37207a68ee966d22b0b8d7969d79e6920",
+  "publisherModelCardLicense": "MIT (preserved as declared; underlying embedded AGPL notice remains)",
+  "artifactModifiedByWearLoop": false,
+  "preferredRuntimeWeightsIncluded": true,
+  "originalTrainingCheckpointPublishedAtPinnedRevision": false,
+  "provenanceCheckedOn": "2026-10-29"
+}

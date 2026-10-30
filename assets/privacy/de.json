@@ -1,0 +1,62 @@
+{
+  "title": "Datenschutzerklärung",
+  "back": "Zurück",
+  "updated": "Aktualisiert: 2026-10-29",
+  "summary": "WearLoop ist ein Kleiderschrank- und Outfit-Tagebuch. Diese Erklärung beschreibt den Umgang der aktuellen App mit Informationen.",
+  "contactLabel": "Datenschutzkontakt",
+  "contactPending": "Für diesen Build sind keine Kontaktdaten eingerichtet.",
+  "onlineLabel": "Datenschutzerklärung im Internet",
+  "loading": "Datenschutzerklärung wird geladen…",
+  "error": "Die Datenschutzerklärung konnte nicht geladen werden.",
+  "retry": "Erneut versuchen",
+  "appName": "WearLoop",
+  "languageCode": "de",
+  "updatedDate": "2026-10-29",
+  "sections": [
+    {
+      "id": "local_data",
+      "title": "Daten auf deinem Gerät",
+      "body": "Kleidungsnamen, Kategorien, Farben, Jahreszeiten, Marken, Preise, Notizen, Outfits und Trageeinträge werden auf deinem Gerät gespeichert. Die Android-App nutzt eine lokale SQLite-Datenbank und app-eigene Bilddateien; Sprache und Einstellungen sind ebenfalls lokal. Die Browser-Vorschau nutzt den Browserspeicher. Die Hauptfunktionen sind offline nutzbar."
+    },
+    {
+      "id": "photos",
+      "title": "Fotos und Kamera",
+      "body": "Wenn du ein Foto hinzufügst, verwendet WearLoop die Systemkamera oder Fotoauswahl. Das gewählte Foto wird zum Anzeigen, Verkleinern oder Zuschneiden gelesen und als Kopie beim Kleidungsstück gespeichert. Das Betriebssystem verwaltet den Zugriff. WearLoop durchsucht nicht im Hintergrund deine gesamte Fotobibliothek."
+    },
+    {
+      "id": "recognition",
+      "title": "Erkennung auf dem Gerät",
+      "body": "In Builds mit lokaler Kleidungserkennung erkennt ein mitgeliefertes KI-Modell Kleidungsstücke und schneidet Bilder auf deinem Gerät zu. Dafür werden weder Fotos noch Ergebnisse an einen Entwicklerserver gesendet. Prüfe Ergebnisse vor dem Speichern; Fehler sind möglich. Die Funktion identifiziert keine Personen."
+    },
+    {
+      "id": "sharing",
+      "title": "Teilen nach deiner Wahl",
+      "body": "Beim Teilen bereitet WearLoop das gewählte Bild oder den Text vor und öffnet das Teilen-Menü. Die ausgewählte App oder der Empfänger erhält den Inhalt und verarbeitet ihn nach eigenen Regeln. Das Löschen eines lokalen Eintrags entfernt keine bereits geteilten Kopien."
+    },
+    {
+      "id": "developer",
+      "title": "Erhebung und Dienste des Entwicklers",
+      "body": "WearLoop enthält kein Kontosystem, Werbe-SDK oder Analyse-SDK. Die App sendet keine Kleiderschrankdaten, Fotos, Trageeinträge oder Gerätekennungen an einen vom Entwickler betriebenen Server. Der Entwickler erhält diese lokalen Inhalte bei normaler Nutzung nicht. Freiwillig geteilte oder per E-Mail versandte Informationen sind davon ausgenommen."
+    },
+    {
+      "id": "backup",
+      "title": "Systemsicherung und Gerätewechsel",
+      "body": "Betriebssystem oder Gerätehersteller können App-Daten gemäß deinen Einstellungen und der Sicherungskonfiguration sichern oder übertragen. Diese Dienste sind von einem WearLoop-Konto oder einer Entwickler-Cloud unabhängig. Verwalte Sicherungen, Übertragungen und wiederhergestellte Kopien in den jeweiligen System- oder Anbietereinstellungen."
+    },
+    {
+      "id": "deletion",
+      "title": "Aufbewahrung und Löschung",
+      "body": "Lokale Einträge bleiben, bis du sie löschst, App-Daten entfernst oder die App deinstallierst. Einstellungen > Alle Daten löschen entfernt Kleidung, Outfits, Trageeinträge und gespeicherte Bildkopien der App. Das Löschen über das System und die Deinstallation entfernen app-eigene Daten gemäß dem Betriebssystemverhalten. Originalfotos, exportierte oder geteilte Dateien, Sicherungen und Kopien auf anderen Geräten musst du separat verwalten. Eine Systemsicherung kann bei Neuinstallation Daten wiederherstellen."
+    },
+    {
+      "id": "contact",
+      "title": "Kontakt zum Entwickler",
+      "body": "Nutze bei Fragen den unten genannten Kontakt. Wenn du eine E-Mail sendest, werden Adresse, Nachricht und Anhänge an den Empfänger und über die beteiligten E-Mail-Dienste übertragen. Wir nutzen die Korrespondenz zur Bearbeitung deiner Anfrage. Sende keine unnötigen Fotos oder persönlichen Angaben. Der Entwickler kann rein lokale Kleiderschrankdaten nicht lesen oder löschen. Bitte beim selben Kontakt um die Löschung von Support-E-Mails."
+    },
+    {
+      "id": "online_policy",
+      "title": "Online lesen",
+      "body": "Der Text in der App ist offline lesbar. Beim Öffnen der Online-Erklärung verbindet sich dein Browser mit dem Hosting-Dienst, der je nach Einstellungen übliche Anfragedaten wie die IP-Adresse erhalten kann. Die bereitgestellten Seiten enthalten keine Werbung, Analyseskripte oder Tracking-Cookies. Änderungen der Datenverarbeitung werden in einer aktualisierten Erklärung beschrieben."
+    }
+  ]
+}

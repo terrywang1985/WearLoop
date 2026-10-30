@@ -1,0 +1,62 @@
+{
+  "title": "Privacy policy",
+  "back": "Back",
+  "updated": "Updated: 2026-10-29",
+  "summary": "WearLoop is a wardrobe and outfit journal. This policy describes how the current app handles information.",
+  "contactLabel": "Privacy contact",
+  "contactPending": "Contact details have not been configured for this build.",
+  "onlineLabel": "Online privacy policy",
+  "loading": "Loading privacy policy…",
+  "error": "The privacy policy could not be loaded.",
+  "retry": "Try again",
+  "appName": "WearLoop",
+  "languageCode": "en",
+  "updatedDate": "2026-10-29",
+  "sections": [
+    {
+      "id": "local_data",
+      "title": "Your data on your device",
+      "body": "Clothing names, categories, colors, seasons, brands, prices, notes, outfits and wear logs are stored on your device. The Android app uses a local SQLite database and app-specific image files; language and preferences are stored locally. The browser preview uses browser storage. Core wardrobe features work offline."
+    },
+    {
+      "id": "photos",
+      "title": "Photos and camera",
+      "body": "When you choose to add a photo, WearLoop uses the system camera or photo picker. It reads the photo you select to display, resize or crop it and to save a copy with your clothing item. Camera and photo access is controlled by your operating system. WearLoop does not scan your whole photo library in the background."
+    },
+    {
+      "id": "recognition",
+      "title": "On-device recognition",
+      "body": "In builds that include local clothing recognition, a bundled AI model detects clothing and crops item images on your device. Photos and recognition results are not uploaded to a developer server for this process. Review the results before saving; recognition can be inaccurate. This feature does not identify people."
+    },
+    {
+      "id": "sharing",
+      "title": "Sharing you choose",
+      "body": "When you share an outfit, WearLoop prepares the image or text you selected and opens your device's share menu. The destination app or recipient you choose receives that content and handles it under its own practices. Copies you share outside WearLoop are not removed when you delete the local record."
+    },
+    {
+      "id": "developer",
+      "title": "Developer collection and services",
+      "body": "WearLoop has no account system, advertising SDK or analytics SDK. The app does not send wardrobe data, photos, wear logs or device identifiers to a developer-operated server. The developer does not receive this local app content through normal app use. This does not cover information you deliberately share or send by email."
+    },
+    {
+      "id": "backup",
+      "title": "System backup and device transfer",
+      "body": "Your operating system or device maker may back up or transfer app data according to your device settings and the app's backup configuration. Such services are separate from a WearLoop account or developer cloud service. Manage backups, transfers and any restored copies through the relevant system or provider settings."
+    },
+    {
+      "id": "deletion",
+      "title": "Retention and deletion",
+      "body": "Local records remain until you delete them, clear WearLoop's data or uninstall the app. Settings > Clear all data removes wardrobe items, outfits, wear logs and the app's saved image copies. System app-data clearing or uninstalling removes app-specific local storage subject to the operating system's behavior. Original photos in your gallery, exported or shared files, backups and copies on other devices must be managed separately. A system backup may restore data when you reinstall."
+    },
+    {
+      "id": "contact",
+      "title": "Contacting the developer",
+      "body": "Use the privacy contact shown below for questions. If you choose to email us, your email address, message and any attachments are sent to the recipient and handled by the email services involved. We use the correspondence to address your inquiry; do not send photos or other personal information unless needed for your request. The developer cannot read or delete wardrobe data that exists only on your device. Ask about deletion of support correspondence through the same contact."
+    },
+    {
+      "id": "online_policy",
+      "title": "Reading this policy online",
+      "body": "The policy text inside the app is available offline. If you open the online policy, your browser connects to the website's hosting service, which may receive normal request information such as an IP address under its service settings. The supplied policy pages contain no advertising, analytics scripts or tracking cookies. Changes to the app's data handling will be reflected in an updated policy."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Kebijakan privasi",
+  "back": "Kembali",
+  "updated": "Diperbarui: 2026-10-29",
+  "summary": "WearLoop adalah jurnal lemari pakaian dan outfit. Kebijakan ini menjelaskan cara aplikasi saat ini menangani informasi.",
+  "contactLabel": "Kontak privasi",
+  "contactPending": "Informasi kontak belum diatur untuk build ini.",
+  "onlineLabel": "Kebijakan privasi online",
+  "loading": "Memuat kebijakan…",
+  "error": "Kebijakan tidak dapat dimuat.",
+  "retry": "Coba lagi",
+  "appName": "WearLoop",
+  "languageCode": "id",
+  "updatedDate": "2026-10-29",
+  "sections": [
+    {
+      "id": "local_data",
+      "title": "Data di perangkatmu",
+      "body": "Nama pakaian, kategori, warna, musim, merek, harga, catatan, outfit, dan riwayat pemakaian disimpan di perangkatmu. Aplikasi Android memakai database SQLite lokal dan file gambar khusus aplikasi. Bahasa dan preferensi juga disimpan lokal. Pratinjau web memakai penyimpanan browser. Fitur utama lemari dapat digunakan offline."
+    },
+    {
+      "id": "photos",
+      "title": "Foto dan kamera",
+      "body": "Saat kamu memilih menambahkan foto, WearLoop menggunakan kamera atau pemilih foto sistem. Foto pilihan dibaca untuk ditampilkan, diperkecil atau dipotong, lalu salinannya disimpan bersama pakaian. Akses diatur sistem operasi. Aplikasi tidak memindai seluruh galeri di latar belakang."
+    },
+    {
+      "id": "recognition",
+      "title": "Pengenalan di perangkat",
+      "body": "Pada build yang menyertakan pengenalan pakaian lokal, model AI bawaan mendeteksi pakaian dan memotong gambarnya di perangkatmu. Foto atau hasil tidak diunggah ke server pengembang untuk proses ini. Periksa hasil sebelum menyimpan karena bisa keliru. Fitur ini tidak mengidentifikasi orang."
+    },
+    {
+      "id": "sharing",
+      "title": "Berbagi atas pilihanmu",
+      "body": "Saat berbagi outfit, aplikasi menyiapkan gambar atau teks pilihan lalu membuka menu berbagi. Aplikasi atau penerima yang kamu pilih menerima konten dan menanganinya sesuai praktik mereka sendiri. Menghapus catatan lokal tidak menghapus salinan yang telah dibagikan keluar."
+    },
+    {
+      "id": "developer",
+      "title": "Pengumpulan dan layanan pengembang",
+      "body": "WearLoop tidak memiliki sistem akun, SDK iklan atau SDK analitik. Aplikasi tidak mengirim data lemari, foto, riwayat pemakaian atau pengenal perangkat ke server yang dioperasikan pengembang. Pengembang tidak menerima konten lokal itu melalui penggunaan biasa. Informasi yang sengaja kamu bagikan atau kirim lewat email tidak termasuk dalam pernyataan ini."
+    },
+    {
+      "id": "backup",
+      "title": "Cadangan sistem dan pindah perangkat",
+      "body": "Sistem operasi atau produsen dapat mencadangkan atau memindahkan data sesuai pengaturan perangkat dan konfigurasi cadangan aplikasi. Layanan tersebut terpisah dari akun WearLoop atau cloud pengembang. Kelola cadangan, transfer dan salinan yang dipulihkan melalui pengaturan sistem atau penyedia terkait."
+    },
+    {
+      "id": "deletion",
+      "title": "Penyimpanan dan penghapusan",
+      "body": "Catatan lokal tetap ada sampai kamu menghapusnya, membersihkan data WearLoop atau menghapus aplikasi. Pengaturan > Hapus semua data menghapus pakaian, outfit, riwayat dan salinan gambar yang disimpan aplikasi. Pembersihan data sistem atau penghapusan aplikasi menghapus penyimpanan khusus sesuai perilaku sistem operasi. Foto asli, file yang diekspor atau dibagikan, cadangan dan salinan pada perangkat lain harus dikelola terpisah. Cadangan sistem bisa memulihkan data saat aplikasi dipasang ulang."
+    },
+    {
+      "id": "contact",
+      "title": "Menghubungi pengembang",
+      "body": "Gunakan kontak di bawah untuk pertanyaan. Jika mengirim email, alamat, pesan dan lampiranmu dikirim ke penerima dan ditangani layanan email terkait. Kami memakai korespondensi untuk menjawab pertanyaan; jangan kirim foto atau informasi pribadi yang tidak diperlukan. Pengembang tidak dapat membaca atau menghapus data lemari yang hanya ada di perangkatmu. Mintalah penghapusan email dukungan melalui kontak yang sama."
+    },
+    {
+      "id": "online_policy",
+      "title": "Membaca kebijakan online",
+      "body": "Teks dalam aplikasi tersedia offline. Jika membuka kebijakan online, browser menghubungi layanan hosting yang dapat menerima informasi permintaan biasa seperti alamat IP sesuai pengaturannya. Halaman yang disediakan tidak memuat iklan, skrip analitik atau cookie pelacak. Perubahan penanganan informasi akan dicantumkan dalam kebijakan yang diperbarui."
+    }
+  ]
+}

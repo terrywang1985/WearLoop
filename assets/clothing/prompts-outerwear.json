@@ -1,0 +1,34 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "filename": "trench.png",
+      "subject": "Subject: one classic khaki tan long trench coat, elegant double-breasted front with matching buttons, notched lapels, belted waist loosely tied, long sleeves extending naturally downward, full hem visible. Real cotton gabardine weave with fine stitching, realistic soft folds and dimensional construction.",
+      "prompt": "Use case: product-mockup.\nAsset type: square transparent clothing product image for a digital wardrobe app.\nStyle: photorealistic high-end catalog studio product cutout, natural real garment and textile detail, not an illustration or 3D render.\nComposition: a single complete item seen directly from the front/top, centered within a square canvas, full silhouette visible, around 10 percent clear margin on every side. Balanced styling, recognizable shape at thumbnail size.\nLighting: soft neutral daylight from the upper left, real subtle self-shading within folds, accurate natural color.\nBackground: genuine fully transparent alpha; garment only, no backdrop and no cast shadow.\nAvoid: people, models, body parts, mannequin, hanger, logos, text, watermarks, props, accessories, floor, shadow under the product. No border. No checkerboard drawn into the image.\nSubject: one classic khaki tan long trench coat, elegant double-breasted front with matching buttons, notched lapels, belted waist loosely tied, long sleeves extending naturally downward, full hem visible. Real cotton gabardine weave with fine stitching, realistic soft folds and dimensional construction.",
+      "sourcePath": "generated/trench.png",
+      "workspacePath": "generated/trench.png"
+    },
+    {
+      "filename": "blazer.png",
+      "subject": "Subject: one heather grey tailored blazer, single-breasted two-button front, notched lapels, subtle welt chest pocket and flap pockets, long sleeves relaxed downward, natural softly structured shoulders. Real lightly textured wool blend textile with a subtle grey melange weave, fine stitching, believable gentle folds.",
+      "prompt": "Use case: product-mockup.\nAsset type: square transparent clothing product image for a digital wardrobe app.\nStyle: photorealistic high-end catalog studio product cutout, natural real garment and textile detail, not an illustration or 3D render.\nComposition: a single complete item seen directly from the front/top, centered within a square canvas, full silhouette visible, around 10 percent clear margin on every side. Balanced styling, recognizable shape at thumbnail size.\nLighting: soft neutral daylight from the upper left, real subtle self-shading within folds, accurate natural color.\nBackground: genuine fully transparent alpha; garment only, no backdrop and no cast shadow.\nAvoid: people, models, body parts, mannequin, hanger, logos, text, watermarks, props, accessories, floor, shadow under the product. No border. No checkerboard drawn into the image.\nSubject: one heather grey tailored blazer, single-breasted two-button front, notched lapels, subtle welt chest pocket and flap pockets, long sleeves relaxed downward, natural softly structured shoulders. Real lightly textured wool blend textile with a subtle grey melange weave, fine stitching, believable gentle folds.",
+      "sourcePath": "generated/blazer.png",
+      "workspacePath": "generated/blazer.png"
+    },
+    {
+      "filename": "dress.png",
+      "subject": "Subject: one dusty pink midi dress with a tiny scattered cream and muted green floral print, short flutter sleeves, softly defined waist, gently flowing A-line midi skirt, refined everyday summer dress. Real soft woven viscose fabric, delicate tiny flowers, realistic natural drape and folds; show the complete dress from neckline to hem.",
+      "prompt": "Use case: product-mockup.\nAsset type: square transparent clothing product image for a digital wardrobe app.\nStyle: photorealistic high-end catalog studio product cutout, natural real garment and textile detail, not an illustration or 3D render.\nComposition: a single complete item seen directly from the front/top, centered within a square canvas, full silhouette visible, around 10 percent clear margin on every side. Balanced styling, recognizable shape at thumbnail size.\nLighting: soft neutral daylight from the upper left, real subtle self-shading within folds, accurate natural color.\nBackground: genuine fully transparent alpha; garment only, no backdrop and no cast shadow.\nAvoid: people, models, body parts, mannequin, hanger, logos, text, watermarks, props, accessories, floor, shadow under the product. No border. No checkerboard drawn into the image.\nSubject: one dusty pink midi dress with a tiny scattered cream and muted green floral print, short flutter sleeves, softly defined waist, gently flowing A-line midi skirt, refined everyday summer dress. Real soft woven viscose fabric, delicate tiny flowers, realistic natural drape and folds; show the complete dress from neckline to hem.",
+      "sourcePath": "generated/dress.png",
+      "workspacePath": "generated/dress.png"
+    },
+    {
+      "filename": "scarf.png",
+      "subject": "Subject: one burgundy wool scarf, naturally arranged in a gentle loose loop with two fringed ends hanging downward and visible, full item shown from above/front, soft irregular natural folds. Real brushed wool textile with visible subtle fibres and fine fringed ends, rich muted wine burgundy color, natural thickness and realistic drape.",
+      "prompt": "Use case: product-mockup.\nAsset type: square transparent clothing product image for a digital wardrobe app.\nStyle: photorealistic high-end catalog studio product cutout, natural real garment and textile detail, not an illustration or 3D render.\nComposition: a single complete item seen directly from the front/top, centered within a square canvas, full silhouette visible, around 10 percent clear margin on every side. Balanced styling, recognizable shape at thumbnail size.\nLighting: soft neutral daylight from the upper left, real subtle self-shading within folds, accurate natural color.\nBackground: genuine fully transparent alpha; garment only, no backdrop and no cast shadow.\nAvoid: people, models, body parts, mannequin, hanger, logos, text, watermarks, props, accessories, floor, shadow under the product. No border. No checkerboard drawn into the image.\nSubject: one burgundy wool scarf, naturally arranged in a gentle loose loop with two fringed ends hanging downward and visible, full item shown from above/front, soft irregular natural folds. Real brushed wool textile with visible subtle fibres and fine fringed ends, rich muted wine burgundy color, natural thickness and realistic drape.",
+      "sourcePath": "generated/scarf.png",
+      "workspacePath": "generated/scarf.png"
+    }
+  ]
+}
